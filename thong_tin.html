@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+
+    <meta charset="UTF-8">
+    <title>CV - Nguyễn Đức An</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(120deg, #74ebd5, #9face6);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cv {
+            background: white;
+            width: 800px;
+            max-width: 90%;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #74ebd5;
+            pointer-events: none;
+        }
+
+        .name h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .name p {
+            margin: 5px 0 0;
+            color: #666;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #333;
+            border-left: 5px solid #74ebd5;
+            padding-left: 10px;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 6px;
+            color: #444;
+        }
+
+        .back {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 10px 18px;
+            background: #74ebd5;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .back:hover {
+            background: #5cc9b8;
+            transform: scale(1.2);
+        }
+        .contact-btn {
+
+            position: fixed;
+            right: 20px;
+            bottom: 40px;
+            margin-top: 30px;
+
+            background: #74ebd5;
+            color: white;
+            text-decoration: none;
+
+            padding: 12px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: bold;
+
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            transition: 0.3s;
+        }
+
+        .contact-btn:hover {
+            background: #5cc9b8;
+            transform: scale(1.5);
+        }
+                /* nền mờ */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            z-index: 99;
+        }
+
+        /* khung liên hệ */
+        .contact-box {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            display: none;
+            z-index: 100;
+            transition: 0.3s;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+        }
+
+        .contact-box a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        .contact-box button {
+            margin-top: 15px;
+            padding: 8px 16px;
+            border: none;
+            background: #74ebd5;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+
+<div class="cv">
+
+    <!-- PHẦN ĐẦU -->
+    <div class="header">
+        <img src="https://i.ibb.co/4RhW1F41/download.jpg" class="avatar">
+
+        <div class="name">
+            <h1>Nguyễn Đức An</h1>
+            <p>Học sinh – Định hướng Công nghệ Thông tin</p>
+            <p>📍 Hà Tĩnh | 🎯 Mục tiêu: ĐH Bách Khoa Hà Nội</p>
+        </div>
+    </div>
+
+    <!-- GIỚI THIỆU -->
+    <h2>Giới thiệu bản thân</h2>
+    <p>
+        Tôi là học sinh có niềm yêu thích với công nghệ và lập trình.
+        Tôi bắt đầu học lập trình từ sớm và luôn cố gắng rèn luyện tư duy logic,
+        kỹ năng giải quyết vấn đề và kỷ luật học tập mỗi ngày.
+    </p>
+
+    <!-- THÀNH TÍCH -->
+    <h2>Thành tích</h2>
+    <ul>
+        <li>✔ Tự học HTML, CSS, C++, Python</li>
+        <li>✔ Hoàn thành nhiều bài tập thuật toán cơ bản</li>
+        <li>✔ Tự xây dựng website profile cá nhân</li>
+        <li>✔ Đang ôn luyện TSA và THPT Quốc gia</li>
+        <li>✔ Đạt giải học sinh giỏi tỉnh trong 3 năm cấp 3</li>
+    </ul>
+
+    <!-- KỸ NĂNG -->
+    <h2>Kỹ năng</h2>
+    <ul>
+        <li>HTML, CSS – Xây dựng giao diện web</li>
+        <li>C++ – Tư duy thuật toán</li>
+        <li>Python – Xử lý logic cơ bản</li>
+        <li>Tự học</li>
+    </ul>
+
+    <!-- MỤC TIÊU -->
+    <h2>Mục tiêu</h2>
+    <p>
+        Đỗ Đại học Bách Khoa Hà Nội và phát triển theo hướng
+        Công nghệ Thông tin, đặc biệt là lập trình và tư duy hệ thống.
+    </p>
+
+    <!-- QUAY LẠI -->
+    <a href="profile_nguyen_duc_an.html" class="back">⬅ Quay lại Profile</a>
+    <button class="contact-btn" onclick="openContact()"> Liên hệ</button>
+
+</div>
+
+<script>
+    function openContact() {
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("contactBox").style.display = "block";
+        document.getElementById("contactBox").style.transform =
+            "translate(-50%, -50%) scale(1)";
+    }
+    
+    function closeContact() {
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("contactBox").style.display = "none";
+    }
+    </script>
+    
+
+</body>
+    <!-- POPUP LIÊN HỆ -->
+    <div class="overlay" id="overlay" onclick="closeContact()"></div>
+
+    <div class="contact-box" id="contactBox">
+        <h3>📬 Thông tin liên hệ</h3>
+    
+        <p>
+            <i class="fa-brands fa-facebook"></i>
+            <a href="https://www.facebook.com/nguyenducan3005208" target="_blank">
+                Facebook
+            </a>
+        </p>
+    
+        <p>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instagram.com/nguyenducan305/" target="_blank">
+                Instagram
+            </a>
+        </p>
+    
+        <p>
+            <i class="fa-brands fa-threads"></i>
+            <a href="https://www.threads.com/@nguyenducan305" target="_blank">
+                Threads
+            </a>
+        </p>
+    
+        <p>
+            <i class="fa-brands fa-tiktok"></i>
+            <a href="https://www.tiktok.com/@helowyn" target="_blank">
+                TikTok
+            </a>
+        </p>
+    
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+            nguyenducan3005@gmail.com
+        </p>
+    
+        <button onclick="closeContact()">Đóng</button>
+    </div>
+    
+</html>
